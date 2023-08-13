@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Project Management</h1>
+  <form>
+  <table border="1">
+    <tr>
+      <th>
+        <label for="project-name">Project Name</label>
+      </th>
+      <td>
+        <input type="text" id="project-name" name="project-name" placeholder="Enter Project Name" required>*
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="assigned-to-menu">Assigned to</label>
+      </th>
+      <td>
+        <select size="2" name="assigned-to-menu" id="assigned-to-menu">
+          <option value="Sr. Ezzaga">عزاقة</option>
+          <option value="Er Merry Petision">Er Merry Petision</option>
+          <option value="Er Deepak Bhusan" selected>Er Deepak Bhusan</option>
+          <option value="Mohamed Ben Nouba">Mohamed Ben Nouba</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="assigned-to">Assigned to</label>
+      </th>
+      <td>
+        <input type="text" id="assigned-to" name="assigned-to">
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="date">Date</label>
+      </th>
+      <td>
+        <input type="date" id="date" name="date" required>*
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="end-date">End Date</label>
+      </th>
+      <td>
+        <input type="date" id="end-date" name="end-date" required value="2022-07-05">*
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="priority">Priority</label>
+      </th>
+      <td>
+        <input type="radio" id="high" name="priority" value="high">
+        <label for="high">High</label>
+
+        <input type="radio" id="average" name="priority" value="average">
+        <label for="average">Average</label>
+
+        <input type="radio" id="low" name="priority" value="low" checked>
+        <label for="low">Low</label>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="description">Description</label>
+      </th>
+      <td>
+        <textarea id="description" name="description" cols="35" rows="4">type here</textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center">
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
